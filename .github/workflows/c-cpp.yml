@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main(){
+    // Dados da primeira cidade
+    int carta1 = 1;
+    char estado1[50] = "A";
+    char código_de_carta1[50] = "A01";
+    char nome_da_cidade1[50] = "São Paulo";
+    unsigned int população1 = 12325000;
+    float área1 = 1521.11;
+    float PIB1 = 699.28;
+    int número_de_pontos_turísticos1 = 50;
+    float densidade_populacional1 = população1 / área1;
+    float PIB_per_capita1 = população1 / PIB1;
+    float super_trunfo1 = população1 + área1 + PIB1 + número_de_pontos_turísticos1;
+
+    // Dados da segunda cidade
+    int carta2 = 2;
+    char estado2[50] = "B";
+    char código_de_carta2[50] = "A02";
+    char nome_da_cidade2[50] = "Rio de Janeiro";
+    unsigned int população2 = 6748000;
+    float área2 = 1200.25;
+    float PIB2 = 300.50;
+    int número_de_pontos_turísticos2 = 30;
+    float densidade_populacional2 = população2 / área2;
+    float PIB_per_capita2 = população2 / PIB2;
+    float super_trunfo2 = população2 + área2 + PIB2 + número_de_pontos_turísticos2;
+
+    // Exibindo os dados da primeira cidade
+    printf("Carta: %d\n", carta1);
+    printf("Nome: %s\n", estado1);
+    printf("Código de Carta: %s\n", código_de_carta1);
+    printf("Nome da Cidade: %s\n", nome_da_cidade1);
+    printf("População: %d\n", população1);
+    printf("Área: %.2f\n", área1);
+    printf("PIB: %.2f\n", PIB1);
+    printf("Número de Pontos Turísticos: %d\n", número_de_pontos_turísticos1);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional1);
+    scanf("%f", &densidade_populacional1);
+    printf("PIB per capita: %.2f\n", PIB_per_capita1);
+    scanf("%f", &PIB_per_capita1);
+    printf("Super trunfo: %.1lf\n", (população1 + área1 + PIB1 + número_de_pontos_turísticos1));
+
+    printf("\n");
+    
+    // Exibindo os dados da segunda cidade
+    printf("Carta: %d\n", carta2);
+    printf("Nome: %s\n", estado2);
+    printf("Código de Carta: %s\n", código_de_carta2);
+    printf("Nome da Cidade: %s\n", nome_da_cidade2);
+    printf("População: %d\n", população2);
+    printf("Área: %.2f\n", área2);
+    printf("PIB: %.2f\n", PIB2);
+    printf("Número de Pontos Turísticos: %d\n", número_de_pontos_turísticos2);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional2);
+    scanf("%f", &densidade_populacional2);
+    printf("PIB per capita: %.2f\n", PIB_per_capita2);
+    scanf("%f", &PIB_per_capita2);
+    printf("Super trunfo: %.1lf\n", (população2 + área2 + PIB2 + número_de_pontos_turísticos2));
+    return 0;
+
+    }
